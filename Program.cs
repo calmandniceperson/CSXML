@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Author(s): Michael Koeppl
+ */
+
+using System;
 
 namespace ConsoleApplication
 {
@@ -6,7 +10,9 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Clear();
+            XMLReaderCS.Read("baum.xml");
+            Management.Instance.Print();
         }
     }
 }
