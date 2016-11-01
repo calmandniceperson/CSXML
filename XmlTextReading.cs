@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace ConsoleApplication
 {
-    class XmlTextReading
+    public class XmlTextReading
     {       
         public void Read(String path){
             if (!File.Exists(path))
@@ -23,54 +23,70 @@ namespace ConsoleApplication
                 {
                     case XmlNodeType.Comment: break;
                     case XmlNodeType.Element:
-                        if (reader.Name == "Park")
+                        if (reader.Name.ToLower() == "park")
                         {
-                            Park p;
-                            if (reader.HasAttributes.ToString() == "id")
-                                p.id = reader.GetAttribute("id");
+                            Park p = new Park();
+                            if (reader.HasAttributes)
+                                p.ID = int.Parse(reader.GetAttribute("id"));
                             while (reader.Read())
                             {
                                 if(reader.NodeType == XmlNodeType.EndElement && reader.Name.ToLower() == "park")
                                     break;
                                 switch (reader.Name.ToLower())
-                                {
+                                {                                   
                                     case "name":
-                                        p.Name = reader.Value;
+                                        if (reader.NodeType != XmlNodeType.EndElement)
+                                        {
+                                            reader.Read();
+                                            p.Name = reader.Value;
+                                        }
                                         break;
                                     case "tree":
-                                        int?  id = null, age = null;
+                                        int id = -1, age = -1;
                                         string type = null;
-                                        if (reader.HasAttributes.ToString().ToLower() == "id")
+                                        if (reader.HasAttributes)
                                             id = int.Parse(reader.GetAttribute("id"));
                                         while (reader.Read())
                                         {
                                             if (reader.NodeType == XmlNodeType.EndElement && reader.Name.ToLower() == "tree")
+                                            {
+                                                if (id != -1 && age != -1 && type != "")
+                                                    p.TreeList.Add(new Tree(id, age, type));
+
                                                 break;
+                                            }
                                             switch (reader.Name.ToLower())
                                             {
                                                 case "age":
-                                                    age = int.Parse(reader.Value);
+                                                    if (reader.NodeType != XmlNodeType.EndElement)
+                                                    {
+                                                        int result = 0;
+                                                        while (result == 0)
+                                                        {
+                                                            reader.Read();
+                                                            if (int.TryParse(reader.Value, out result))
+                                                                age = result;
+                                                        }
+                                                    }
                                                     break;
                                                 case "type":
-                                                    type = reader.Value;
+                                                    if (reader.NodeType != XmlNodeType.EndElement)
+                                                    {
+                                                        reader.Read();
+                                                        type = reader.Value;
+                                                    }
                                                     break;
                                             }
                                         }
-                                        if (id != null && age != null && type != "")
-                                            p.TreeList.Add(new Tree(id, age, type));
                                         break;
                                 }                                
                             }
                             Management.Instance.ParkList.Add(p);
-
                         }
                         break;
                     default: break;
                 }
-                reader.Close();
             }
         }
-        
-
     }
 }
