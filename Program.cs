@@ -11,10 +11,14 @@ namespace ConsoleApplication
         public static void Main(string[] args)
         {
             Console.Clear();
+            //Read Köppl
             XMLReaderCS.Read("baum.xml");
+            //Read Poul
             //XmlTextReading.Read("baum.xml");
+            //Allgemeines Printen des Eingelesenen
             Management.Instance.Print();
-            //XMLWriterCS.Write(Management.Instance.ParkList, "out.xml");
+            //Write Köppl
+            XMLWriterCS.Write(Management.Instance.ParkList, "out.xml");
         }
     }
 }
