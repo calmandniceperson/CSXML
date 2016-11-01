@@ -9,8 +9,8 @@ namespace ConsoleApplication
 {
     public class Park
     {
-        public int ID { private get; set; }
-        public string Name { private get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
         
         public List<Tree> TreeList { get; private set; }
         

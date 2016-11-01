@@ -13,6 +13,7 @@ namespace ConsoleApplication
             Console.Clear();
             XMLReaderCS.Read("baum.xml");
             Management.Instance.Print();
+            XMLWriterCS.Write(Management.Instance.ParkList, "out.xml");
         }
     }
 }

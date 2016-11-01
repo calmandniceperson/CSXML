@@ -9,13 +9,13 @@ namespace ConsoleApplication
     public class Tree
     {
         public int ID { get; private set; }
-        private int ageInYears;
-        private string type;
+        public int AgeInYears;
+        public string Type;
         public Tree(int id, int ageInYears, string type)
         {
             this.ID = id;
-            this.ageInYears = ageInYears;
-            this.type = type;
+            this.AgeInYears = ageInYears;
+            this.Type = type;
         }
         
         override public string ToString()
@@ -23,8 +23,8 @@ namespace ConsoleApplication
             StringBuilder sb = new StringBuilder();
             sb.Append("\n\tTree")
                 .Append($"\tID: {ID}\n")
-                .Append($"\t\tAge in Years: {ageInYears}\n")
-                .Append($"\t\tType: {type}\n");
+                .Append($"\t\tAge in Years: {AgeInYears}\n")
+                .Append($"\t\tType: {Type}\n");
             return sb.ToString();
         }
     }
