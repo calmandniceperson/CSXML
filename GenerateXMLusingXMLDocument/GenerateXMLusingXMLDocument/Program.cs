@@ -15,23 +15,18 @@ namespace GenerateXMLusingXMLDocument
         {
             this.ParkList = new List<Park>();
         }
-
         public static Management Instance
         {
             get
             {
                 if (instance == null)
-                {
                     instance = new Management();
-                }
                 return instance;
             }
         }
-
         public List<Park> ParkList
         {
-            get;
-            set;
+            get; set;
         }
         public void Print()
         {
@@ -43,7 +38,6 @@ namespace GenerateXMLusingXMLDocument
         public int ID { get; set; }
         public int AgeInYears { get; set; }
         public string Type { get; set; }
-
         override public string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -77,8 +71,8 @@ namespace GenerateXMLusingXMLDocument
             return sb.ToString();
         }
     }
-    
-        class Program
+
+    class Program
     {
         //static List<Park> ParkList = new List<Park>();
         static void Main(string[] args)
@@ -90,7 +84,7 @@ namespace GenerateXMLusingXMLDocument
             WriteXML(".\\baum2.xml");
             start:
             Console.WriteLine("Press ESC key to exit...");
-            if(ConsoleKey.Escape != Console.ReadKey().Key)
+            if (ConsoleKey.Escape != Console.ReadKey().Key)
                 goto start;
         }
         public static void ReadXML(string path)
@@ -187,11 +181,11 @@ namespace GenerateXMLusingXMLDocument
                 newXMLDoc.Save(path);
                 Console.WriteLine($"Successfully wrote the new Doc to {path}");
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error: \n" + e.ToString());
             }
-            
+
         }
     }
 }
