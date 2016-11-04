@@ -4,3 +4,6 @@ E:\Schule\5.Jahrgang\POS_GOLD\XMLHu\ConsoleApplication\ConsoleApplication\bin\De
 E:\Schule\5.Jahrgang\POS_GOLD\XMLHu\ConsoleApplication\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
 E:\Schule\5.Jahrgang\POS_GOLD\XMLHu\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.exe
 E:\Schule\5.Jahrgang\POS_GOLD\XMLHu\ConsoleApplication\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Users\Alexander\Documents\GitHub\CSXML\XMLTextReaderWriter\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Alexander\Documents\GitHub\CSXML\XMLTextReaderWriter\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Users\Alexander\Documents\GitHub\CSXML\XMLTextReaderWriter\ConsoleApplication\obj\Debug\ConsoleApplication.pdb

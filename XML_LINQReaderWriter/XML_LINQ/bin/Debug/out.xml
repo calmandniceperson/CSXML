@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RootNode>
+  <park id="1">
+    <name>Linkin Park</name>
+    <tree id="1">
+      <age>96</age>
+      <type>beech</type>
+    </tree>
+  </park>
+</RootNode>
