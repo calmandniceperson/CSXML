@@ -1,0 +1,6 @@
+d:\benutzer\bernd\Schule\POS\Programme\GenerateXMLusingXMLDocument\GenerateXMLusingXMLDocument\bin\Debug\GenerateXMLusingXMLDocument.exe.config
+D:\Benutzer\Bernd\Schule\POS\Programme\GenerateXMLusingXMLDocument\GenerateXMLusingXMLDocument\bin\Debug\GenerateXMLusingXMLDocument.exe
+D:\Benutzer\Bernd\Schule\POS\Programme\GenerateXMLusingXMLDocument\GenerateXMLusingXMLDocument\bin\Debug\GenerateXMLusingXMLDocument.pdb
+D:\Benutzer\Bernd\Schule\POS\Programme\GenerateXMLusingXMLDocument\GenerateXMLusingXMLDocument\obj\Debug\GenerateXMLusingXMLDocument.csprojResolveAssemblyReference.cache
+D:\Benutzer\Bernd\Schule\POS\Programme\GenerateXMLusingXMLDocument\GenerateXMLusingXMLDocument\obj\Debug\GenerateXMLusingXMLDocument.exe
+D:\Benutzer\Bernd\Schule\POS\Programme\GenerateXMLusingXMLDocument\GenerateXMLusingXMLDocument\obj\Debug\GenerateXMLusingXMLDocument.pdb
