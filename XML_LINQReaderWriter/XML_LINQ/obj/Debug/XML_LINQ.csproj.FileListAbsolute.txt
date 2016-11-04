@@ -1,0 +1,6 @@
+c:\users\alexander\documents\visual studio 2015\Projects\XML_LINQ\XML_LINQ\bin\Debug\XML_LINQ.exe.config
+c:\users\alexander\documents\visual studio 2015\Projects\XML_LINQ\XML_LINQ\bin\Debug\XML_LINQ.exe
+c:\users\alexander\documents\visual studio 2015\Projects\XML_LINQ\XML_LINQ\bin\Debug\XML_LINQ.pdb
+c:\users\alexander\documents\visual studio 2015\Projects\XML_LINQ\XML_LINQ\obj\Debug\XML_LINQ.csprojResolveAssemblyReference.cache
+c:\users\alexander\documents\visual studio 2015\Projects\XML_LINQ\XML_LINQ\obj\Debug\XML_LINQ.exe
+c:\users\alexander\documents\visual studio 2015\Projects\XML_LINQ\XML_LINQ\obj\Debug\XML_LINQ.pdb
