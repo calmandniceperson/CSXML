@@ -25,14 +25,9 @@ namespace ConsoleApplication
         
         private static void processElement(XmlReader reader)
         {
-            int id = -1;
             switch (reader.Name)
             {
                 case "park":
-                    if (reader.HasAttributes)
-                    {
-                        id = int.Parse(reader.GetAttribute("id"));
-                    }
                     processPark(reader);
                     break;
             }
